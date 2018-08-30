@@ -6,12 +6,12 @@ public class SpinnyFloatyCube : MonoBehaviour {
 
 	public float speed = 10f;
 	private Rigidbody gameObjectsRigidBody;
-	public GameObject player;
+	private GameObject player ;
 
 
 	// Use this for initialization
 	void Start () {
-		
+		player = GameObject.Find ("RigidBodyFPSController");
 	}
 	
 	// Update is called once per frame
